@@ -33,7 +33,7 @@ public class ProductController {
   @GetMapping
   @ResponseStatus(HttpStatus.OK)
   public List<ProductResponse> getAllProducts() {
-    log.debug("getAllProducts started");
+    log.debug("getAllProducts :: started");
     return productService.getAllProducts();
   }
 }

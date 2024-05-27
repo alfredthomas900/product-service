@@ -2,7 +2,6 @@ package com.alfredthomas.productservice;
 
 import com.alfredthomas.productservice.dto.ProductRequest;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,10 +19,12 @@ import java.math.BigDecimal;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+/** Integration test for the ProductServiceApplication.
+ * Ensure to have the Docker Docker up and running before running the tests
+ * Or else, the tests will fail */
 @SpringBootTest
 @Testcontainers
 @AutoConfigureMockMvc
-@Disabled
 class ProductServiceApplicationTests {
 
   @Container static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:4.4.2");

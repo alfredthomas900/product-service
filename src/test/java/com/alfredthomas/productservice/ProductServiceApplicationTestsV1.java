@@ -3,15 +3,16 @@ package com.alfredthomas.productservice;
 import io.restassured.RestAssured;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.testcontainers.containers.MongoDBContainer;
 
+/** Integration test for the ProductServiceApplicationV1.
+ * Ensure to have the Docker Docker up and running before running the tests
+ * Or else, the tests will fail */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Disabled
 public class ProductServiceApplicationTestsV1 {
 
   @ServiceConnection static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:7.0.5");

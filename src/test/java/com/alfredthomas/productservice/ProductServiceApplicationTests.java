@@ -19,9 +19,10 @@ import java.math.BigDecimal;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-/** Integration test for the ProductServiceApplication.
- * Ensure to have the Docker Docker up and running before running the tests
- * Or else, the tests will fail */
+/**
+ * Integration test for the ProductServiceApplication. Ensure to have the Docker Docker up and
+ * running before running the tests Or else, the tests will fail
+ */
 @SpringBootTest
 @Testcontainers
 @AutoConfigureMockMvc

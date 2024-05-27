@@ -9,9 +9,10 @@ import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.boot.testcontainers.service.connection.ServiceConnection;
 import org.testcontainers.containers.MongoDBContainer;
 
-/** Integration test for the ProductServiceApplicationV1.
- * Ensure to have the Docker Docker up and running before running the tests
- * Or else, the tests will fail */
+/**
+ * Integration test for the ProductServiceApplicationV1. Ensure to have the Docker Docker up and
+ * running before running the tests Or else, the tests will fail
+ */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ProductServiceApplicationTestsV1 {
 
